@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><XMI xmlns:UML="href://org.omg/UML/1.3" xmi.version="1.1">
+    <XMI.header>
+        <XMI.metamodel xmi.name="UML" xmi.version="1.3"/>
+    </XMI.header>
+    <XMI.content>
+        <UML:Model name="PlantUML" xmi.id="model1">
+            <UML:Namespace.ownedElement>
+                <UML:Class isAbstract="true" name="Item" namespace="uk.ac.aston.oop.uml.media" xmi.id="cl0129">
+                    <UML:Classifier.feature>
+                        <UML:Operation name="Item(title: String, playMinutes: int)" visibility="public" xmi.id="att148"/>
+                        <UML:Operation name="getComment(): String" visibility="public" xmi.id="att149"/>
+                        <UML:Operation name="setComment(c: String)" visibility="public" xmi.id="att150"/>
+                        <UML:Operation name="isOwned(): boolean" visibility="public" xmi.id="att151"/>
+                        <UML:Operation name="setOwned(o: boolean)" visibility="public" xmi.id="att152"/>
+                        <UML:Operation name="getPlayMinutes(): int" visibility="public" xmi.id="att153"/>
+                        <UML:Operation name="toString(): String" visibility="public" xmi.id="att154"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+                <UML:Class name="Video" namespace="uk.ac.aston.oop.uml.media" xmi.id="cl0130">
+                    <UML:Classifier.feature>
+                        <UML:Operation name="Video(title: String, director: String, playMinutes: int)" visibility="public" xmi.id="att155"/>
+                        <UML:Operation name="getDirector(): String" visibility="public" xmi.id="att156"/>
+                        <UML:Operation name="toString(): String" visibility="public" xmi.id="att157"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+                <UML:Class name="CD" namespace="uk.ac.aston.oop.uml.media" xmi.id="cl0132">
+                    <UML:Classifier.feature>
+                        <UML:Operation name="CD(title: String, artist: String, nTracks: int, playMinutes: int)" visibility="public" xmi.id="att158"/>
+                        <UML:Operation name="getArtist(): String" visibility="public" xmi.id="att159"/>
+                        <UML:Operation name="getNumberOfTracks(): int" visibility="public" xmi.id="att160"/>
+                        <UML:Operation name="toString(): String" visibility="public" xmi.id="att161"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+                <UML:Class name="Database" namespace="uk.ac.aston.oop.uml.media" xmi.id="cl0134">
+                    <UML:Classifier.feature>
+                        <UML:Operation name="Database()" visibility="public" xmi.id="att162"/>
+                        <UML:Operation name="addItem(i: Item)" visibility="public" xmi.id="att163"/>
+                        <UML:Operation name="print()" visibility="public" xmi.id="att164"/>
+                        <UML:Operation name="main(args: String[])" visibility="public" xmi.id="att165"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+                <UML:Generalization child="cl0130" name="" namespace="model1" parent="cl0129" xmi.id="ass166"/>
+                <UML:Generalization child="cl0132" name="" namespace="model1" parent="cl0129" xmi.id="ass167"/>
+                <UML:Association namespace="model1" xmi.id="ass168">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass168" type="cl0136" xmi.id="end169">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass168" type="cl0134" xmi.id="end170">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association namespace="model1" xmi.id="ass171">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass171" type="cl0129" xmi.id="end172">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass171" type="cl0139" xmi.id="end173">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association namespace="model1" xmi.id="ass174">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass174" type="cl0132" xmi.id="end175">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass174" type="cl0142" xmi.id="end176">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association namespace="model1" xmi.id="ass177">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass177" type="cl0130" xmi.id="end178">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass177" type="cl0145" xmi.id="end179">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="contains" namespace="model1" xmi.id="ass180">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd aggregation="composite" association="ass180" type="cl0134" xmi.id="end181">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass180" name="*" type="cl0129" xmi.id="end182">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+            </UML:Namespace.ownedElement>
+        </UML:Model>
+    </XMI.content>
+</XMI>

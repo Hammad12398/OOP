@@ -1,0 +1,20 @@
+@startuml
+title Interface diagram
+
+' Define the Iterable interface with a method that returns an Iterator
+interface Iterable {
+  +iterator(): Iterator
+}
+
+' Define the Collection interface that extends Iterable
+interface Collection extends Iterable {
+  +clear(): void
+}
+
+' Define the AbstractList abstract class that implements Collection
+abstract class AbstractList implements Collection {
+  - size : int
+  +size(): int
+}
+
+@enduml

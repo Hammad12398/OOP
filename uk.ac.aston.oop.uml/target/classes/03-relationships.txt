@@ -1,0 +1,30 @@
+@startuml
+title Relationships 
+
+class Lecturer {
+}
+
+class Student {
+}
+
+class Window {
+}
+
+class Frame {
+}
+
+class Room {
+}
+
+class Wall {
+}
+
+Lecturer "1..*" -- "*" Student : teaches
+Window *-- Frame : has
+Room "*" o-- "3..*" Wall : is formed of
+
+@enduml
+
+
+
+

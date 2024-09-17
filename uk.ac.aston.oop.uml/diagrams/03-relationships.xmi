@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><XMI xmlns:UML="href://org.omg/UML/1.3" xmi.version="1.1">
+    <XMI.header>
+        <XMI.metamodel xmi.name="UML" xmi.version="1.3"/>
+    </XMI.header>
+    <XMI.content>
+        <UML:Model name="PlantUML" xmi.id="model1">
+            <UML:Namespace.ownedElement>
+                <UML:Class name="Lecturer" namespace="model1" xmi.id="cl0031">
+                    <UML:Classifier.feature/>
+                </UML:Class>
+                <UML:Class name="Student" namespace="model1" xmi.id="cl0032">
+                    <UML:Classifier.feature/>
+                </UML:Class>
+                <UML:Class name="Window" namespace="model1" xmi.id="cl0033">
+                    <UML:Classifier.feature/>
+                </UML:Class>
+                <UML:Class name="Frame" namespace="model1" xmi.id="cl0034">
+                    <UML:Classifier.feature/>
+                </UML:Class>
+                <UML:Class name="Room" namespace="model1" xmi.id="cl0035">
+                    <UML:Classifier.feature/>
+                </UML:Class>
+                <UML:Class name="Wall" namespace="model1" xmi.id="cl0036">
+                    <UML:Classifier.feature/>
+                </UML:Class>
+                <UML:Association name="teaches" namespace="model1" xmi.id="ass40">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass40" name="1..*" type="cl0031" xmi.id="end41">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass40" name="*" type="cl0032" xmi.id="end42">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="has" namespace="model1" xmi.id="ass43">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd aggregation="composite" association="ass43" type="cl0033" xmi.id="end44">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass43" type="cl0034" xmi.id="end45">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="is formed of" namespace="model1" xmi.id="ass46">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd aggregation="aggregate" association="ass46" name="*" type="cl0035" xmi.id="end47">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass46" name="3..*" type="cl0036" xmi.id="end48">
+                            <UML:AssociationEnd.participant/>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+            </UML:Namespace.ownedElement>
+        </UML:Model>
+    </XMI.content>
+</XMI>
